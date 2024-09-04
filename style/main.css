@@ -16,8 +16,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     @media (max-width: 768px) {
-        background-position: 100%;
-        background-size: auto;
+        background-size: cover;
         padding-left: 50px;
         
     }
@@ -98,7 +97,7 @@ body::before {
 
     .menu.show {
         display: none;
-        
+    
     }
 
     .menu li {
