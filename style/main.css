@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    text-decoration: none;
+    color: #a2a2a2;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/images/marvels-spider-man-miles-morales-ps4-ps5-wallpapers-04.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #111111f3;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+nav.navbar .logo img {
+    width: 50px;
+    animation: FadeIn 1s linear forwards;
+}
+
+nav.navbar .left {
+    display: flex;
+    align-items: center;
+}
+
+nav.navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav.navbar ul a {
+    display: block;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    animation: FadeIn 1s linear forwards;
+}
+
+nav.navbar a:hover {
+    color: red;
+}
+
+nav.navbar ul a.active {
+    color: red;
+}
+
+nav.navbar .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content {
+    margin-top: 4rem;
+    animation: FadeIn 1s linear forwards;
+}
+
+.content .title {
+    width: 50%;
+}
+
+.content .paragraph {
+    width: 80%;
+    margin-top: 0rem;
+}
+
+.content .companies {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.content .companies img {
+    width: fit-content;
+    height: 30px;
+}
+
+.content .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+} 
+
+.content .buttons a {
+    display: block;
+    padding: 15px 4%;
+    margin-right: 3rem;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    transform: skew(-8deg);
+}
+
+.content .buttons a.trailer {
+    border: 2px solid red;
+}
+
+.content .buttons a.trailer:hover {
+    background: red;
+}
+
+.content .buttons a.preorder {
+    background: rgb(190, 4, 4);
+}
+
+.content .buttons a.preorder:hover {
+    background: rgb(245, 13, 13);
+}
+
+.content .character {
+    position: absolute;
+    width: 60%;
+    right: -20%;
+    top: 0;
+}
+
+@keyframes FadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
